@@ -9,7 +9,7 @@ terraform {
   backend "s3" {
     # Replace this with your bucket name!
     bucket         = "terraform-deep-dive-state-bucket"
-    key            = "global/s3/backend-configuration/terraform.tfstate"
+    key            = "global/s3/single-ec2-instance/terraform.tfstate"
     region         = "us-east-1"
     # Replace this with your DynamoDB table name!
     dynamodb_table = "terraform-deep-dive-state-locks"
